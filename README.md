@@ -50,3 +50,12 @@ http://localhost:8000/swagger/
 Access the Postman collection at:
 
 [<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://bold-meteor-776316.postman.co/collection/13893557-1630e338-089f-4d2d-a949-fd192f77cfb5?source=rip_markdown)
+
+7. Generate Database Schema
+
+```bash
+docker-compose exec db pg_dump --schema-only --no-owner --no-privileges --username=rodrigo --dbname=livpool_challenge > schema.sql
+```
+
+Then access the schema.sql file in the root of the project, alternatively use the following dbdiagram.io link:
+https://dbdiagram.io/d/Django-REST-API-Senior-Backend-Software-Engineer-Technical-Challenge-65577ea33be149578735fc1a
